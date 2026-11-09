@@ -1847,8 +1847,8 @@ html&gt;body{padding:0}&lt;/style&gt;
   &lt;style&gt;
     #correlation-demo svg { display:block; width:100%; height:290px; color:var(--foreground); }
     #correlation-demo .scale { display:flex; justify-content:space-between; }
-    #correlation-demo .grid { stroke:var(--border); }
-    #correlation-demo .point { fill:var(--viz-series-1,var(--blue)); opacity:.8; transition:cy 100ms ease-out; }
+    #correlation-demo .grid { stroke:color-mix(in srgb, var(--border) 72%, var(--foreground)); }
+    #correlation-demo .point { fill:color-mix(in srgb, var(--viz-series-1,var(--blue)) 82%, var(--foreground)); transition:cy 100ms ease-out; }
     @media (prefers-reduced-motion:reduce) { #correlation-demo .point { transition:none; } }
   &lt;/style&gt;
   &lt;h2&gt;Pearson correlation&lt;/h2&gt;
